@@ -12,7 +12,12 @@ const sequelize = new Sequelize(
     logging: false
   }
 );
-
+console.log("DB CONFIG", {
+  host: process.env.DB_HOST,
+  port: process.env.DB_PORT,
+  user: process.env.DB_USER,
+  database: process.env.DB_NAME
+});
 async function connectDB() {
   try {
     await sequelize.authenticate();
