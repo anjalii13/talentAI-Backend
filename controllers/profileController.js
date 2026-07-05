@@ -73,7 +73,7 @@ if (!profile) {
     bio: "",
     location: "",
     experienceYears: 0,
-    experienceYears:"",
+
   currentPosition:"",
   currentCompany:"",
   education:"",
